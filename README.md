@@ -1,6 +1,6 @@
 # PollutionGO - Open Source Air Quality Monitoring
 
-**PollutionGO** is an open-source, end-to-end air quality monitoring platform. It combines a low-cost, portable sensor unit (ESP32-based), a mobile application, and a cloud‑ready server backend to collect, visualise, and share real-time environmental data. The project was created by the **HAW‑Hatim** team to make air quality monitoring accessible, affordable, and transparent.
+**PollutionGO** is an open-source, end-to-end air quality monitoring platform. It combines a low-cost, portable sensor unit (ESP32-based), a mobile application, and a cloud‑ready server backend to collect, visualise, and share real-time environmental data. The project was created by us to make air quality monitoring accessible, affordable, and transparent.
 
 ## Table of Contents
 
@@ -34,7 +34,7 @@
 PollutionGO/
 ├── Hardware/               # 3D‑printable enclosure design and assembly guide
 ├── ESP32 Code/             # Arduino sketch for the ESP32 sensor unit
-├── App/                    # Mobile application source code (Android/iOS)
+├── App/                    # Mobile application source code (Android only)
 └── Server/                 # FastAPI server backend with MariaDB integration
 ```
 
@@ -52,10 +52,10 @@ PollutionGO/
 - (Optional) 3D printer for the enclosure
 
 ### Software
-- [Arduino IDE](https://www.arduino.cc/en/software) (for ESP32 firmware)
-- [Python 3.8+](https://www.python.org/) (for the server)
-- [MariaDB 11.8+](https://mariadb.org/) (database)
-- [Node.js / React Native](https://reactnative.dev/) (if you plan to build the mobile app from source)
+- [Arduino IDE](https://www.arduino.cc/en/software) (ESP32 firmware)
+- [Python 3.8+](https://www.python.org/) (Server)
+- [MariaDB 11.8+](https://mariadb.org/) (Database)
+- [Android Studio]((https://developer.android.com/studio?hl=de)) (App programming)
 
 ---
 
@@ -158,24 +158,27 @@ For detailed API usage, refer to the [Server README](Server/README.md).
 
 ## Mobile App
 
-The mobile app (Android/iOS) connects to the ESP32 via BLE, receives real‑time sensor data, and uploads it to the server. The app also displays historical data on a map.
+The mobile app connects to the ESP32 via BLE, receives real‑time sensor data, and the user has the option to upload collected data to a server. The app also displays collected data in an intuitive way on the map.
 
 ### Building from Source
 
-> The app source code is located in the `App` folder. Detailed build instructions are being prepared and will be added soon. In the meantime, you can import the project into Android Studio or Xcode and build it using the respective toolchains.
+> The app source code is located in the `App` folder. To adjust or contribute the repository can be cloned with the following command
+> # Clone the repository
+git clone https://github.com/HAW-Hatim/PollutionGO.git
+cd PollutionGO/App/PollutionGo
 
 ### Pre‑built APK / IPA
 
-Pre‑built binaries will be made available in the [Releases](https://github.com/HAW-Hatim/PollutionGO/releases) section.
+Pre-built APK will be available in the [Releases](https://github.com/HAW-Hatim/PollutionGO/releases) section.
 
 ---
 
 ## Usage
 
 1. **Power on the ESP32 sensor unit.** The onboard LED will indicate BLE advertising.
-2. **Open the mobile app** and scan for nearby devices. Connect to `ESP32_BLE_UART`.
-3. **Collect data** – the app will display live readings and automatically upload them to the configured server.
-4. **View historical data** on the map or export it as GeoJSON for further analysis.
+2. **Open the mobile app** it will automatically connect to the ESP32 and an activity can be started.
+3. **Collect data** – Data collection happends in fore- and background, so user can focus on other activities while the sensor is running.
+4. **Finishing an activity** on the map or export it as GeoJSON for further analysis.
 
 ---
 
@@ -187,7 +190,6 @@ We welcome contributions! Here’s how you can help:
 - **Suggest new features** or improvements.
 - **Submit pull requests** for code, documentation, or hardware designs.
 
-Please read our [Contributing Guidelines](CONTRIBUTING.md) (to be added) for more details.
 
 ---
 
