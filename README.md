@@ -183,8 +183,8 @@ Pre-built APK will be available in the [Releases](https://github.com/HAW-Hatim/P
 
 1. **Power on the ESP32 sensor unit.** The onboard LED will indicate BLE advertising.
 2. **Open the mobile app** it will automatically connect to the ESP32 and an activity can be started.
-3. **Collect data** – Data collection happends in fore- and background, so user can focus on other activities while the sensor is running.
-4. **Finishing an activity** on the map or export it as GeoJSON for further analysis.
+3. **Collect data** – Data collection happens in fore- and background, so user can focus on other activities while the sensor is running.
+4. **Finishing an activity** possible to upload collected data to the server and discovering time plots of the activity.
 
 ---
 
@@ -195,6 +195,12 @@ We welcome contributions! Here’s how you can help:
 - **Report bugs** by opening an [issue](https://github.com/HAW-Hatim/PollutionGO/issues).
 - **Suggest new features** or improvements.
 - **Submit pull requests** for code, documentation, or hardware designs.
+
+## Feature Ideas
+- **View past activities**
+- **Supporting multiple device sizes and orientations (currently only portrait mode on phone)**
+- **Adjusting plots to display the air qaulity rating**
+- **After finishing an activity, similar to running apps, display the driven route and the air quality at the different times**
 
 
 ---
