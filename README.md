@@ -13,6 +13,7 @@
 - [Mobile App](#mobile-app)
 - [Usage](#usage)
 - [Contributing](#contributing)
+- [Feature Ideas](#feature-ideas)
 - [License](#license)
 
 ---
