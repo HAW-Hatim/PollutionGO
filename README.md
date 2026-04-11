@@ -44,13 +44,19 @@ PollutionGO/
 ## Prerequisites
 
 ### Hardware
-- ESP32 development board (e.g., ESP32‑WROOM‑32)
-- Sensors:
-  - Adafruit PM2.5 Air Quality Sensor (PM25AQI)
-  - Adafruit LPS22 Pressure/Temperature Sensor
-  - Sensirion SCD41 CO₂ Sensor
-- Connecting wires, breadboard, power supply
-- (Optional) 3D printer for the enclosure
+- 2x Wing nuts M3
+- 2x Screw M3x55
+- 1x ESP32 Microcontroller
+- 1x Rasberry PI
+- 1x SCD41-D-R2 Sensor (CO2, Luftfeuchtigkeit, Temperatur)
+- 1x Switch
+- 1x Battery 3,7V
+- 1x Solarpanel 6V
+- 1x LED 5mm Red
+- 1x Resistor 330 Ohm 
+- 1x Sensor Adafruit 4632 (Particulat matter)
+- 1x Sensor Adafruit LPS22 (Air pressure)
+- 1x Battery/Solarboard Waveshare Solar Power Manager
 
 ### Software
 - [Arduino IDE](https://www.arduino.cc/en/software) (ESP32 firmware)
