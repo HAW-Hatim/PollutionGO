@@ -55,7 +55,7 @@ PollutionGO/
 - [Arduino IDE](https://www.arduino.cc/en/software) (ESP32 firmware)
 - [Python 3.8+](https://www.python.org/) (Server)
 - [MariaDB 11.8+](https://mariadb.org/) (Database)
-- [Android Studio]((https://developer.android.com/studio?hl=de)) (App programming)
+- [Android Studio](https://developer.android.com/studio?hl=de) (App programming)
 
 ---
 
@@ -101,6 +101,8 @@ temperature,humidity,pressure,co2,pm1_0,pm2_5,pm10
 ```
 
 ---
+
+Other charachteristics for BLE like the device name or other UUID's should stay the same since our app is filtering for the specific charachteristics.
 
 ## Server Setup
 
