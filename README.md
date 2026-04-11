@@ -164,14 +164,18 @@ The mobile app connects to the ESP32 via BLE, receives real‑time sensor data, 
 
 ### Building from Source
 
-> The app source code is located in the `App` folder. To adjust or contribute the repository can be cloned with the following command
-> # Clone the repository
-git clone https://github.com/HAW-Hatim/PollutionGO.git
-cd PollutionGO/App/PollutionGo
+> The app source code is located in the `App\PollutionGo` folder. To adjust or contribute the repository can be cloned with the following command
 
+```bash
+# Clone the repository
+git clone https://github.com/HAW-Hatim/PollutionGO.git
+
+# Navigate to source code folder
+cd PollutionGO/App/PollutionGo
+```
 ### Pre‑built APK / IPA
 
-Pre-built APK will be available in the [Releases](https://github.com/HAW-Hatim/PollutionGO/releases) section.
+Pre-built APK will be available in the [Releases](https://github.com/HAW-Hatim/PollutionGO/releases) section and app folder.
 
 ---
 
