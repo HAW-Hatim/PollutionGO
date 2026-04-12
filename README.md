@@ -68,7 +68,7 @@ PollutionGO/
 
 ## Hardware Setup
 
-The hardware consists of an ESP32 that reads data from three sensors over I²C. The wiring diagram and a 3D‑printable case are provided in the `Hardware/Case` folder.
+The hardware consists of an ESP32 that reads data from three sensors over I²C. The wiring diagram and a 3D‑printable case are provided in the `Hardware/Case` folder. Esp32 and sensors are powered via batteries that can be recharged via a solarpanel. A schematic can be found in the `Hardware` folder.
 
 ### Sensor Connections
 
